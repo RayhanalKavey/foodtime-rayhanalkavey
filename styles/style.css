@@ -2,14 +2,15 @@
 General CSS
 ================== */
 :root {
+  --white-color: #ffffff;
   --paragraph-color: #676767;
   --black-basic-color: #3f3f3f;
   --disable-color: #c7c7c7;
   --low-highlighted-color: #9f9f9f;
-  --primary-color: #6b9142;
+  --primary-color: #396c03;
   --primary-color-bg: hsla(89, 37%, 41%, 0.1);
   --secondary-color: #ff8b00;
-  --secondary-color-bg: #ff8b00;
+  --secondary-color-bg: rgba(255, 140, 0, 0.05);
   --poppins-font: "Poppins", sans-serif;
   --merienda-font: "Merienda", cursive;
 }
@@ -23,38 +24,26 @@ General CSS
 
 html {
   font-size: 62.5%;
+  font-family: var(--poppins-font);
 }
 
 .container {
-  width: 1233.58px;
+  max-width: 123.3rem;
   margin-left: auto;
   margin-right: auto;
+  padding: 0.5rem;
 }
-/* ===============
-Navbar
-================== */
-.nav-header {
-  background-color: var(--primary-color-bg);
-}
-
-.nav-container {
-  color: var(--black-basic-color);
+.btn {
+  border: none;
+  color: var(--white-color);
+  background: var(--primary-color);
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  font-size: 2.2rem;
+  font-weight: 500;
+  border-radius: 120px;
 }
-.nav-written-logo {
-  font-family: var(--merienda-font);
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 2.8rem;
-  line-height: 4.5rem;
-}
-.nav-items {
-  font-family: var(--poppins-font);
-  font-size: 1.8rem;
-  list-style: none;
-  display: flex;
-  gap: 7rem;
+.hide {
+  display: hidden;
 }

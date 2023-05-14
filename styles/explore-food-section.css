@@ -1,0 +1,72 @@
+.explore-food-section {
+  background-color: var(--secondary-color-bg);
+}
+.explore-food-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8.2rem;
+  padding-bottom: 9.2rem;
+}
+/* @media (max-width: 992px) {
+ 
+} */
+.explore-food-content h2 {
+  font-family: var(--merienda-font);
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 65px;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-style: normal;
+}
+.explore-food-content p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 29px;
+  color: var(--paragraph-color);
+  margin-bottom: 1.4rem;
+  width: 56.7rem;
+}
+
+.explore-food-content button {
+  padding: 15px 60px;
+}
+
+.animation-img {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  height: 50.067rem;
+}
+.city {
+  max-height: 50.067rem;
+  max-width: 200%;
+  background-image: url(/city-background.png);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  background-repeat: repeat-x;
+  animation: city 5s linear infinite;
+}
+@keyframes city {
+  100% {
+    transform: translateX(-150px);
+  }
+}
+.bike {
+  height: 43.791rem;
+  width: 200%;
+  z-index: 20;
+  position: absolute;
+  top: -20;
+  bottom: 20;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-image: url(/too-much-orders-contacless-delivery-service-during-quarantine-man-delivers-food-during-isolation-wearing-helmet-face-mask-taking-food-bike-isolated-white-wall-safety-hurrying-up\ copy\ 1.png);
+}

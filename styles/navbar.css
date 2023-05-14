@@ -1,0 +1,95 @@
+/* ===============
+Navbar
+================== */
+.main-header {
+  background-color: var(--primary-color-bg);
+}
+.main-header nav {
+  border-bottom: 1px solid #3f3f3f20;
+}
+
+.main-header .navbar {
+  color: var(--black-basic-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2.838rem;
+  padding-bottom: 2.514rem;
+}
+.nav-written-logo {
+  font-family: var(--merienda-font);
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2.83446rem;
+  line-height: 4.5rem;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 10.1rem;
+  /* display: none; */
+}
+
+/* All links */
+.nav-links {
+  font-weight: 500;
+  font-size: 1.8rem;
+  list-style: none;
+  display: flex;
+  gap: 7rem;
+}
+/* en link start */
+.nav-en-link {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.nav-en-link span {
+  display: inline-block;
+}
+.nav-en-link span svg {
+  height: 0.8rem;
+  width: 1.358rem;
+}
+/* en link end */
+
+/* All individual link */
+.nav-links li {
+  font-size: 1.8rem;
+  line-height: 3.6rem;
+  color: var(--black-basic-color);
+}
+.nav-buttons {
+  display: flex;
+  gap: 2.3rem;
+  justify-content: center;
+  align-items: center;
+}
+.nav-button {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border: none;
+}
+.login-button {
+  border-radius: 225px;
+  font-weight: 500;
+  padding: 1.2rem 5rem;
+  font-size: 2rem;
+  line-height: 34px;
+}
+.cart-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 99.9rem;
+  padding: 1.2rem;
+}
+.cart-button svg {
+  height: 3rem;
+  width: 3rem;
+}
+/* ===============
+Navbar end
+================== */

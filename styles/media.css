@@ -1,0 +1,43 @@
+@media (max-width: 992px) {
+  html {
+    font-size: 52.5%;
+  }
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .explore-food-section .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .explore-food-content {
+    align-items: center;
+    justify-content: center;
+  }
+  .explore-food-content button {
+    align-items: center;
+    justify-self: center;
+  }
+}
+@media (max-width: 678px) {
+  html {
+    font-size: 31.5%;
+    font-family: var(--poppins-font);
+  }
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .explore-food-section .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .explore-food-content {
+    align-items: center;
+    justify-content: center;
+  }
+  .explore-food-content button {
+    align-items: center;
+    justify-self: center;
+  }
+}

@@ -20,40 +20,133 @@
       rel="stylesheet"
     />
     <!-- Link css -->
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/hero-section.css" />
+    <link rel="stylesheet" href="./styles/explore-food-section.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
   </head>
   <body>
-    <header class="nav-header">
+    <header class="main-header">
       <!-- Nav container  start-->
-      <nav class="container nav-container">
-        <div>
-          <a class="nav-written-logo" href="#">FoodTime</a>
+      <nav>
+        <div class="container navbar">
+          <div>
+            <a class="nav-written-logo" href="#">FoodTime</a>
+          </div>
+          <!-- Nav items start -->
+          <div class="nav-items">
+            <ul class="nav-links">
+              <li>Home</li>
+              <li>Blog</li>
+              <li>About us</li>
+              <li class="nav-en-link">
+                EN
+                <span
+                  ><svg
+                    width="14"
+                    height="9"
+                    viewBox="0 0 14 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.08049 0.855353L6.79423 5.5691L11.508 0.855353C11.9818 0.381549 12.7472 0.381549 13.221 0.855353C13.6948 1.32916 13.6948 2.09453 13.221 2.56834L7.64465 8.14465C7.17084 8.61845 6.40547 8.61845 5.93166 8.14465L0.355353 2.56834C-0.118451 2.09453 -0.118451 1.32916 0.355353 0.855353C0.829157 0.393698 1.60668 0.381549 2.08049 0.855353Z"
+                      fill="#3F3F3F"
+                    />
+                  </svg>
+                </span>
+              </li>
+            </ul>
+
+            <!-- Login button and cart start -->
+            <div class="nav-buttons">
+              <button class="nav-button login-button">login</button>
+              <button class="nav-button cart-button">
+                <svg
+                  width="29"
+                  height="30"
+                  viewBox="0 0 29 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.32635 0C1.86221 0 1.41707 0.185924 1.08887 0.51687C0.760675 0.847817 0.576294 1.29668 0.576294 1.76471C0.576294 2.23273 0.760675 2.6816 1.08887 3.01254C1.41707 3.34349 1.86221 3.52941 2.32635 3.52941H4.46142L4.99519 5.68588C5.00049 5.71071 5.00633 5.73542 5.01269 5.76L7.38927 15.3424L5.82647 16.9165C3.6214 19.14 5.18245 22.9412 8.30105 22.9412H23.3271C23.7912 22.9412 24.2363 22.7553 24.5645 22.4243C24.8927 22.0934 25.0771 21.6445 25.0771 21.1765C25.0771 20.7084 24.8927 20.2596 24.5645 19.9286C24.2363 19.5977 23.7912 19.4118 23.3271 19.4118H8.30105L10.0511 17.6471H21.577C21.9019 17.6469 22.2204 17.5555 22.4967 17.3831C22.773 17.2108 22.9963 16.9643 23.1415 16.6712L28.3917 6.08294C28.525 5.81396 28.5879 5.5151 28.5745 5.21472C28.5611 4.91433 28.4718 4.62238 28.3151 4.36658C28.1583 4.11077 27.9394 3.89959 27.679 3.75308C27.4186 3.60656 27.1254 3.52957 26.8272 3.52941H8.06654L7.52403 1.33588C7.42922 0.954271 7.21068 0.615545 6.90312 0.373509C6.59556 0.131474 6.21661 1.03419e-05 5.82647 0H2.32635ZM25.0771 27.3529C25.0771 28.055 24.8005 28.7283 24.3082 29.2247C23.8159 29.7211 23.1482 30 22.452 30C21.7558 30 21.0881 29.7211 20.5958 29.2247C20.1035 28.7283 19.8269 28.055 19.8269 27.3529C19.8269 26.6509 20.1035 25.9776 20.5958 25.4812C21.0881 24.9848 21.7558 24.7059 22.452 24.7059C23.1482 24.7059 23.8159 24.9848 24.3082 25.4812C24.8005 25.9776 25.0771 26.6509 25.0771 27.3529ZM8.45156 30C9.14777 30 9.81548 29.7211 10.3078 29.2247C10.8001 28.7283 11.0766 28.055 11.0766 27.3529C11.0766 26.6509 10.8001 25.9776 10.3078 25.4812C9.81548 24.9848 9.14777 24.7059 8.45156 24.7059C7.75534 24.7059 7.08764 24.9848 6.59534 25.4812C6.10304 25.9776 5.82647 26.6509 5.82647 27.3529C5.82647 28.055 6.10304 28.7283 6.59534 29.2247C7.08764 29.7211 7.75534 30 8.45156 30Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+            <!-- Login button and cart end -->
+          </div>
+          <!-- /// Hamburger menu -->
+          <!-- <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button> -->
+          <!-- Nav items end -->
         </div>
-        <ul class="nav-items">
-          <li>Home</li>
-          <li>Blog</li>
-          <li>About us</li>
-          <li>
-            EN
-            <span
-              ><svg
-                width="14"
-                height="9"
-                viewBox="0 0 14 9"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2.08049 0.855353L6.79423 5.5691L11.508 0.855353C11.9818 0.381549 12.7472 0.381549 13.221 0.855353C13.6948 1.32916 13.6948 2.09453 13.221 2.56834L7.64465 8.14465C7.17084 8.61845 6.40547 8.61845 5.93166 8.14465L0.355353 2.56834C-0.118451 2.09453 -0.118451 1.32916 0.355353 0.855353C0.829157 0.393698 1.60668 0.381549 2.08049 0.855353Z"
-                  fill="#3F3F3F"
-                />
-              </svg>
-            </span>
-          </li>
-        </ul>
       </nav>
       <!-- Nav container end -->
+
+      <!-- Hero section start -->
+      <section class="container">
+        <div class="hero-section">
+          <!-- Content -->
+          <div class="hero-content">
+            <h1 class="hero-heading">
+              Order food online from your favourite local restaurants.
+            </h1>
+            <p class="hero-text">Freshly made food delivered to your door.</p>
+            <div class="search-field">
+              <input type="text" class="search-input" />
+              <button class="btn search-button">Search</button>
+            </div>
+          </div>
+          <!-- Image -->
+          <div class="hero-img">
+            <img src="./assets/hero-img.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Hero section end -->
     </header>
-    <main>hu</main>
+    <main>
+      <section class="explore-food-section">
+        <div class="container">
+          <!-- content -->
+          <div class="explore-food-content">
+            <h2>
+              Explore your <br />
+              favourite city’s food.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Ornare massa nunc <br />
+              nibh tristique. Non ligula tristique ut ut libero sit convallis
+              maecenas. At egestas auctor porta mattis.
+            </p>
+            <button class="btn">Explore</button>
+          </div>
+          <!-- Image -->
+          <div class="animation-img">
+            <div class="city"></div>
+            <div class="bike"></div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

@@ -6,25 +6,55 @@ General CSS
   --black-basic-color: #3f3f3f;
   --disable-color: #c7c7c7;
   --low-highlighted-color: #9f9f9f;
-  --primary-color: ##6b9142;
+  --primary-color: #6b9142;
+  --primary-color-bg: hsla(89, 37%, 41%, 0.1);
   --secondary-color: #ff8b00;
+  --secondary-color-bg: #ff8b00;
+  --poppins-font: "Poppins", sans-serif;
+  --merienda-font: "Merienda", cursive;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 html {
   font-size: 62.5%;
 }
 
+.container {
+  width: 1233.58px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* ===============
 Navbar
 ================== */
-.container {
+.nav-header {
+  background-color: var(--primary-color-bg);
 }
+
 .nav-container {
-  background-color: rgba(var(--bg-color), 0.5);
+  color: var(--black-basic-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-written-logo {
+  font-family: var(--merienda-font);
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 4.5rem;
+}
+.nav-items {
+  font-family: var(--poppins-font);
+  font-size: 1.8rem;
+  list-style: none;
+  display: flex;
+  gap: 7rem;
 }
